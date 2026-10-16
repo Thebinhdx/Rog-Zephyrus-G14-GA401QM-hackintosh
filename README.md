@@ -54,7 +54,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [X] **Touchpad**: I2C Worked.
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
-- [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app.
+- [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by laobamc.
 - [ ] **MT7921 Bluetooth**: The kext is unstable or has issues, causing Bluetooth to not work.
 - [ ] **AirDrop / AWDL / Continuity**: Not working.
 
