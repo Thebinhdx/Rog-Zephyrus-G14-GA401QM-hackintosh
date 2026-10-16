@@ -21,6 +21,7 @@
 macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 
 <p align="center">
+<img width="1920" height="1080" alt="Screenshot macOS" src="https://github.com/user-attachments/assets/0f717b5d-7038-4cee-8cec-3535b353c618" />
 
 
 ---
