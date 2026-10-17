@@ -61,7 +61,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
 - [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
 - [ ] **MT7921 Wifi native**: You can try [airportmtkwlan.kext](https://github.com/mnnobre/AirportMtkWlan) (Only work on Sequoia and it doesn't work perfectly. Not recommended for use.)
-- [X] **MT7921 Bluetooth**: Working ()
+- [X] **MT7921 Bluetooth**: Connected and functioning normally.
 - [X] **Rog controls / lighting**: This app is taken from the [ga403wm-hackintosh](https://github.com/thanhnndev/ga403wm-hackintosh/blob/main/docs/ASUSCTL-MACOS.md) project and allows you to adjust power profiles and keyboard backlighting (only static and brightness can be adjusted). (Only these features work; for other features like battery level limits or CPU parameters, you can use other apps. For example, AMD Power Gadget to view CPU status.)
 - [ ] **AirDrop / AWDL / Continuity**: Not working.
 
@@ -69,7 +69,6 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 > - This version doesn't have a MUX switch. So if you want to use an Nvidia graphics card, you need an external monitor that connects via a Type-C port and is capable of outputting video to the computer and disable iGPU AMD. (Tested)
 > - If you're using an AMD integrated GPU instead of an Nvidia GPU, you'll need to use `-wenoegpu` in boot-args to disable the Nvidia GPU. However, when using an AMD integrated GPU, you'll also need to disable hardware acceleration on Chromium that isn't optimized for the Nootedred kext. (If you don't disable it, apps running Chromium will lag and become unusable.) (Tested)
 > - (Use dGPU) To upgrade from Sequoia to Tahoe, you need follow the instruction which nullmoth wrote in the instructions to upgrade without broken driver.
-> - In boot-args, I made a mistake typing `revpatch=cpuname,sbwm`, please correct it to `revpatch=sbvmm,cpuname`. Doing so will make the Tahoe update appear in the software update.
 
 # Credit
 - [Apple](https://apple.com) for macOS
@@ -77,5 +76,5 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [DavidS95](https://github.com/DavidS95) for [UMAF](https://github.com/DavidS95/Smokeless_UMAF/)
 - [trulyspinach](https://github.com/trulyspinach) for [SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
 - [Nullmoth](https://github.com/nullmoth) for [Nvidia macOS](https://github.com/nullmoth/nvidia-macos-driver)
-- [laobamac](https://github.com/laobamac) for [SimpleHDA](https://github.com/laobamac/SimpleHDA) and [SimpleMtkWlan](https://github.com/flxxxxddd/SimpleMtkWlan) fork by [flxxxxddd](https://github.com/flxxxxddd)
+- [laobamac](https://github.com/laobamac) for [SimpleHDA](https://github.com/laobamac/SimpleHDA), [SimpleMtkWlan](https://github.com/flxxxxddd/SimpleMtkWlan) fork by [flxxxxddd](https://github.com/flxxxxddd) and [SimpleMtkBtFw](https://github.com/flxxxxddd/SimpleMtkBtFw) fork by [flxxxxddd](https://github.com/flxxxxddd)
 - And others who contribute to the community
