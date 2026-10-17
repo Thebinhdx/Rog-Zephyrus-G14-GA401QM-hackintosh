@@ -43,6 +43,9 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 
 **Worked on macOS 15/26 (Tested)**
 
+>[!NOTE]
+>On Tahoe 26, Apple removed AppleHDA so you can't use your internal speaker. You need install this [SimpleHDA](https://github.com/laobamac/SimpleHDA) to fix this issue.
+
 ---
 
 ## Feature and Hardware
@@ -53,6 +56,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [X] **dGPU**: Nvidia RTX 3060 6144 MB VRAM. [Nullmoth Nvidia](https://github.com/nullmoth/nvidia-macos-driver)
 - [X] **USB**: All usb ports and external hub worked.
 - [X] **Touchpad**: I2C Worked.
+- [X] **Sound**: Working perfectly on Sequoia. Need [SimpleHDA](https://github.com/laobamac/SimpleHDA) for Tahoe.
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
 - [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
@@ -72,4 +76,5 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [DavidS95](https://github.com/DavidS95) for [UMAF](https://github.com/DavidS95/Smokeless_UMAF/)
 - [trulyspinach](https://github.com/trulyspinach) for [SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
 - [Nullmoth](https://github.com/nullmoth) for [Nvidia macOS](https://github.com/nullmoth/nvidia-macos-driver)
+- [laobamac](https://github.com/laobamac) for [SimpleHDA](https://github.com/laobamac/SimpleHDA) and [SimpleMtkWlan](https://github.com/flxxxxddd/SimpleMtkWlan) fork by [flxxxxddd](https://github.com/flxxxxddd)
 - And others who contribute to the community
