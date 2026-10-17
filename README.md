@@ -44,7 +44,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 **Worked on macOS 15/26 (Tested)**
 
 >[!NOTE]
->On Tahoe 26, Apple removed AppleHDA so you can't use your internal speaker. You need install this [SimpleHDA](https://github.com/laobamac/SimpleHDA) to fix this issue.
+>On Tahoe 26, Apple removed AppleHDA so you can't use your internal speaker. You need install this [SimpleHDA](https://github.com/laobamac/SimpleHDA) to fix this issue (It's already included in the kexts, no need to re-download).
 
 ---
 
@@ -56,12 +56,12 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [X] **dGPU**: Nvidia RTX 3060 6144 MB VRAM. [Nullmoth Nvidia](https://github.com/nullmoth/nvidia-macos-driver)
 - [X] **USB**: All usb ports and external hub worked.
 - [X] **Touchpad**: I2C Worked.
-- [X] **Sound**: Working perfectly on Sequoia. Need [SimpleHDA](https://github.com/laobamac/SimpleHDA) for Tahoe.
+- [X] **Sound**: Working perfectly on Sequoia. Need [SimpleHDA](https://github.com/laobamac/SimpleHDA) for Tahoe (It's already included in the kexts, no need to re-download).
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
 - [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
 - [ ] **MT7921 Wifi native**: You can try [airportmtkwlan.kext](https://github.com/mnnobre/AirportMtkWlan) (Only work on Sequoia and it doesn't work perfectly. Not recommended for use.)
-- [ ] **MT7921 Bluetooth**: The kext is unstable or has issues, causing Bluetooth to not work.
+- [X] **MT7921 Bluetooth**: Working ()
 - [X] **Rog controls / lighting**: This app is taken from the [ga403wm-hackintosh](https://github.com/thanhnndev/ga403wm-hackintosh/blob/main/docs/ASUSCTL-MACOS.md) project and allows you to adjust power profiles and keyboard backlighting (only static and brightness can be adjusted). (Only these features work; for other features like battery level limits or CPU parameters, you can use other apps. For example, AMD Power Gadget to view CPU status.)
 - [ ] **AirDrop / AWDL / Continuity**: Not working.
 
