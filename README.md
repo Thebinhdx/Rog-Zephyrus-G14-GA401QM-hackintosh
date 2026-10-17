@@ -39,9 +39,9 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 | **dGPU**          | Nvidia RTX 3060 Laptop 6GB                         | Nvidia |
 | **RAM**           | DDR4 24GB / 3200MHz                   | Micron + Corsair                           |
 | **Storage**       | SK Hynix HFM001TD3JX013N 1TB                  | SK Hynix                          |
-| **WIFI Card**| MediaTek MT7921 | MediaTek|
+| **WIFI Card**| MediaTek MT7921 (Recommend change to new card) | MediaTek|
 
-**Only tested on macOS 15 Sequoia.** It may work on macOS 26 Tahoe (Not yet tested).
+**Worked on macOS 15/26 (Tested)**
 
 ---
 
@@ -55,13 +55,16 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [X] **Touchpad**: I2C Worked.
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
-- [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by laobamc.
+- [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
+- [ ] **MT7921 Wifi native**: You can try [airportmtkwlan.kext](https://github.com/mnnobre/AirportMtkWlan) (Only work on Sequoia and it doesn't work perfectly. Not recommended for use.)
 - [ ] **MT7921 Bluetooth**: The kext is unstable or has issues, causing Bluetooth to not work.
 - [ ] **AirDrop / AWDL / Continuity**: Not working.
 
 >[!WARNING]
 > - This version doesn't have a MUX switch. So if you want to use an Nvidia graphics card, you need an external monitor that connects via a Type-C port and is capable of outputting video to the computer and disable iGPU AMD. (Tested)
 > - If you're using an AMD integrated GPU instead of an Nvidia GPU, you'll need to use `-wenoegpu` in boot-args to disable the Nvidia GPU. However, when using an AMD integrated GPU, you'll also need to disable hardware acceleration on Chromium that isn't optimized for the Nootedred kext. (If you don't disable it, apps running Chromium will lag and become unusable.) (Tested)
+> - (Use dGPU) To upgrade from Sequoia to Tahoe, you need follow the instruction which nullmoth wrote in the instructions to upgrade without broken driver.
+> - In boot-args, I made a mistake typing `revpatch=cpuname,sbwm`, please correct it to `revpatch=sbvmm,cpuname`. Doing so will make the Tahoe update appear in the software update.
 
 # Credit
 - [Apple](https://apple.com) for macOS
