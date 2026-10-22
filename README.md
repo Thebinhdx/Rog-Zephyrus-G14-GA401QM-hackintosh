@@ -69,6 +69,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 > - This version doesn't have a MUX switch. So if you want to use an Nvidia graphics card, you need an external monitor that connects via a Type-C port and is capable of outputting video to the computer, add this to boot-args `-wegnoigpu` to disable iGPU AMD. (Tested)
 > - If you're using an AMD integrated GPU instead of an Nvidia GPU, you'll need to use `-wenoegpu` in boot-args to disable the Nvidia GPU. However, when using an AMD integrated GPU, you'll also need to disable hardware acceleration on Chromium that isn't optimized for the Nootedred kext. (If you don't disable it, apps running Chromium will lag and become unusable.) (Tested)
 > - (Use dGPU) To upgrade from Sequoia to Tahoe, you need follow the instruction which nullmoth wrote in the instructions to upgrade without broken driver.
+> - Drivers for Nvidia cards are not yet stable enough and haven't fixed issues like WebGL (Chrome, Edge, etc), DRM content (netflix, discord, ...), etc. Therefore, if you want the best and least error-prone solution, you should use an iGPU temporarily.
 
 # Credits
 - [Apple](https://apple.com) for macOS
