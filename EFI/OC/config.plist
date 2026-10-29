@@ -262,7 +262,7 @@
                     <key>Comment</key>
                     <string>V0.9.0</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/NootedRed</string>
                     <key>MaxKernel</key>
@@ -442,7 +442,7 @@
                     <key>Comment</key>
                     <string>V1.2.0</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SimpleMtkWlan</string>
                     <key>MaxKernel</key>
@@ -463,24 +463,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/RestrictEvents</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AsusWmi.kext</string>
-                    <key>Comment</key>
-                    <string>V</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AsusWmi</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -791,6 +773,24 @@
                     <string></string>
                     <key>MinKernel</key>
                     <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AirportMtkWlan.kext</string>
+                    <key>Comment</key>
+                    <string>V1.5.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportMtkWlan</string>
+                    <key>MaxKernel</key>
+                    <string>25.99.99</string>
+                    <key>MinKernel</key>
+                    <string>25.0.0</string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -1657,7 +1657,7 @@
                 <key>CustomSMBIOSGuid</key>
                 <true/>
                 <key>DisableIoMapper</key>
-                <false/>
+                <true/>
                 <key>DisableIoMapperMapping</key>
                 <false/>
                 <key>DisableLinkeditJettison</key>
@@ -1903,7 +1903,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>-v debug=0x100 keepsyms=1 swd_panic=1 -vi2c-force-polling -lilubetaall revpatch=sbvmm,cpuname -ChefKissInternal -bfixup ipc_control_port_options=0 nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi_get_out_of_my_way=0x1 amfi=0x80 itlmt_native=1 itlmt_native_if=1 itlmt_native_dp=1 itlmt_fast=6</string>
+                    <string>-v debug=0x100 keepsyms=1 swd_panic=1 -vi2c-force-polling -lilubetaall revpatch=sbvmm,cpuname -ChefKissInternal -bfixup ipc_control_port_options=0 nvfb=1 nvaccel=1 nvfbheads=4 -nvkmsnosmooth amfi_get_out_of_my_way=0x1 amfi=0x80 itlmt_native=1 itlmt_native_if=1 itlmt_native_dp=1 itlmt_fast=6 -wegnoigpu</string>
                     <key>csr-active-config</key>
                     <data>/w8AAA==</data>
                     <key>prev-lang:kbd</key>
@@ -2246,7 +2246,7 @@
                 <key>ActivateHpetSupport</key>
                 <false/>
                 <key>DisableSecurityPolicy</key>
-                <false/>
+                <true/>
                 <key>EnableVectorAcceleration</key>
                 <true/>
                 <key>EnableVmx</key>
