@@ -59,8 +59,12 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [X] **Sound**: Working perfectly on Sequoia. Need [SimpleHDA](https://github.com/laobamac/SimpleHDA) for Tahoe (It's already included in the kexts, no need to re-download).
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
-- [X] **MT7921 Wifi**: Wifi doesn't work natively; it only connects via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
-- [ ] **MT7921 Wifi native**: You can try [airportmtkwlan.kext](https://github.com/mnnobre/AirportMtkWlan) (Only work on Sequoia and it doesn't work perfectly. Not recommended for use.)
+- [X] **MT7921 Wifi**: Connects wifi via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
+- [X] **MT7921 Wifi native**: Worked natively with this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) by [arxusion](https://github.com/Arxusion/). (Support Sequoia and Tahoe, Tested)
+
+>[!NOTE]
+>If you use this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/). You need to set `Enabled` to `true` for airportmtkwlan and `Disabled` to `false` other simplewtkwlan kext.
+
 - [X] **MT7921 Bluetooth**: Connected and functioning normally.
 - [X] **Rog controls / Keyboards lightning**: [rog-center-ga401qm](https://github.com/thebinhdx/rog-center-ga401qm) This application has been modified by thebinhdx from [rog-gaming-center](https://github.com/sritulasiram/rog-gaming-center-hackintosh) by [sritulasiram](https://github.com/sritulasiram) to make it compatible with this device model and add some features which the original version does not have.
 - [ ] **AirDrop / AWDL / Continuity**: Not working.
@@ -78,4 +82,5 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [trulyspinach](https://github.com/trulyspinach) for [SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
 - [Nullmoth](https://github.com/nullmoth) for [Nvidia macOS](https://github.com/nullmoth/nvidia-macos-driver)
 - [laobamac](https://github.com/laobamac) for [SimpleHDA](https://github.com/laobamac/SimpleHDA), [SimpleMtkWlan](https://github.com/flxxxxddd/SimpleMtkWlan) fork by [flxxxxddd](https://github.com/flxxxxddd) and [SimpleMtkBtFw](https://github.com/flxxxxddd/SimpleMtkBtFw) fork by [flxxxxddd](https://github.com/flxxxxddd)
+- [arxusion](https://github.com/Arxusion/) for [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/)
 - And others who contribute to the community
