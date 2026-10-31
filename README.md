@@ -60,7 +60,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
 - [X] **MT7921 Wifi**: Connects wifi via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
-- [X] **MT7921 Wifi native**: Worked natively with this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) by [arxusion](https://github.com/Arxusion/). (Support Sequoia and Tahoe, Tested)
+- [X] **MT7921 Wifi native**: Worked natively with this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) by [arxusion](https://github.com/Arxusion/). (Support Sequoia and Tahoe, Tested, but it is still subject to a speed limit)
 
 >[!NOTE]
 >If you use this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/). You need to set `Enabled` to `true` for airportmtkwlan and `Disabled` to `false` other simplewtkwlan kext. The EFI folder only contains kexts for Tahoe; if you are using the Sequoia version, please download the appropriate files from the creator's website.
