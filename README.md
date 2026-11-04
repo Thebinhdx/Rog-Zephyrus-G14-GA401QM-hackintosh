@@ -68,7 +68,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 >If you use this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/). You need to set `Enabled` to `true` for airportmtkwlan and `Disabled` to `false` other simplewtkwlan kext. The EFI folder only contains kexts for Tahoe; if you are using the Sequoia version, please download the appropriate files from the creator's website.
 
 >[!WARNING]
->**Do not update to the new kext version; versions after 1.5.1 are unstable, frequently lose connection, or stop working on versions 1.6 and above. Stay on version 1.5.1 until an official patch is released!**
+>**Do not update to the new [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) kext version; versions after 1.5.1 are unstable, frequently lose connection, or stop working on versions 1.6 and above. Stay on version 1.5.1 until an official patch is released!**
 
 - [X] **MT7921 Bluetooth**: Connected and functioning normally.
 - [X] **Rog controls / Keyboards lightning**: [rog-center-ga401qm](https://github.com/thebinhdx/rog-center-ga401qm) This application has been modified by thebinhdx from [rog-gaming-center](https://github.com/sritulasiram/rog-gaming-center-hackintosh) by [sritulasiram](https://github.com/sritulasiram) to make it compatible with this device model and add some features which the original version does not have.
