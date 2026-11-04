@@ -45,6 +45,8 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 
 >[!NOTE]
 >On Tahoe 26, Apple removed AppleHDA so you can't use your internal speaker. You need install this [SimpleHDA](https://github.com/laobamac/SimpleHDA) to fix this issue (It's already included in the kexts, no need to re-download).
+>
+>Or use 1401 app can fix this issue. (Only v2.7 above)
 
 ---
 
