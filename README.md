@@ -67,6 +67,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 
 - [X] **MT7921 Bluetooth**: Connected and functioning normally.
 - [X] **Rog controls / Keyboards lightning**: [rog-center-ga401qm](https://github.com/thebinhdx/rog-center-ga401qm) This application has been modified by thebinhdx from [rog-gaming-center](https://github.com/sritulasiram/rog-gaming-center-hackintosh) by [sritulasiram](https://github.com/sritulasiram) to make it compatible with this device model and add some features which the original version does not have.
+- [X] **ARM apps**: Apps that only support the ARM architecture can now run on the x86_64 architecture, thanks to [Nullmoth’s](https://github.com/nullmoth) translation layer. (Experimental on v2.7, not tested)
 - [ ] **AirDrop / AWDL / Continuity**: Not working.
 
 >[!WARNING]
@@ -74,6 +75,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 > - If you're using an AMD integrated GPU instead of an Nvidia GPU, you'll need to use `-wegnoegpu` in boot-args to disable the Nvidia GPU. However, when using an AMD integrated GPU, you'll also need to disable hardware acceleration on Chromium that isn't optimized for the Nootedred kext. (If you don't disable it, apps running Chromium will lag and become unusable.) (Tested)
 > - (Use dGPU) To upgrade from Sequoia to Tahoe, you need follow the instruction which nullmoth wrote in the instructions to upgrade without broken driver.
 > - Drivers for Nvidia cards are not yet stable enough and haven't fixed issues like WebGL (Chrome, Edge, etc), DRM content (netflix, discord, ...), etc. Therefore, if you want the best and least error-prone solution, you should use an iGPU temporarily.
+> - To use apps designed for the ARM architecture, you must download the 1401 app by Nullmoth to enable the feature, and then follow the provided instructions.
 
 # Credits
 - [Apple](https://apple.com) for macOS
