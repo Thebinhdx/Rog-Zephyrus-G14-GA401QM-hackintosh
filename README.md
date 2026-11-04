@@ -69,7 +69,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 
 - [X] **MT7921 Bluetooth**: Connected and functioning normally.
 - [X] **Rog controls / Keyboards lightning**: [rog-center-ga401qm](https://github.com/thebinhdx/rog-center-ga401qm) This application has been modified by thebinhdx from [rog-gaming-center](https://github.com/sritulasiram/rog-gaming-center-hackintosh) by [sritulasiram](https://github.com/sritulasiram) to make it compatible with this device model and add some features which the original version does not have.
-- [X] **ARM apps**: Apps that only support the ARM architecture can now run on the x86_64 architecture, thanks to [Nullmoth’s](https://github.com/nullmoth) translation layer. (Experimental on v2.7, not tested)
+- [X] **ARM apps**: Apps that only support the ARM architecture can now run on the x86_64 architecture, thanks to [Nullmoth’s](https://github.com/nullmoth) translation layer. (Experimental on v2.7, not tested on this machine)
 - [ ] **AirDrop / AWDL / Continuity**: Not working.
 
 >[!WARNING]
