@@ -71,7 +71,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 >**Do not update to the new [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) kext version; versions after 1.5.1 are unstable, frequently lose connection, or stop working on versions 1.6 and above. Stay on version 1.5.1 until an official patch is released!**
 
 - [X] **MT7921 Bluetooth**: Connected and functioning normally.
-- [X] **Rog controls / Keyboards lightning**: [rog-center-ga401qm](https://github.com/thebinhdx/rog-center-ga401qm) This application has been modified by thebinhdx from [rog-gaming-center](https://github.com/sritulasiram/rog-gaming-center-hackintosh) by [sritulasiram](https://github.com/sritulasiram) to make it compatible with this device model and add some features which the original version does not have.
+- [X] **Rog controls / Keyboards lightning**: Download [MHelper](https://github.com/FranciumOS-org/MHelper) by [FranciumOS-org](https://github.com/FranciumOS-org)
 - [X] **ARM apps**: Apps that only support the ARM architecture can now run on the x86_64 architecture, thanks to [Nullmoth’s](https://github.com/nullmoth) translation layer. (Experimental on v2.7, not tested on this machine)
 - [ ] **AirDrop / AWDL / Continuity**: Under development... [AirportMtk-AWDL](https://github.com/Arxusion/AirportMtk-AWDL) by [Arxusion](https://github.com/Arxusion/)
 
@@ -90,4 +90,5 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [Nullmoth](https://github.com/nullmoth) for [Nvidia macOS](https://github.com/nullmoth/nvidia-macos-driver)
 - [laobamac](https://github.com/laobamac) for [SimpleHDA](https://github.com/laobamac/SimpleHDA), [SimpleMtkWlan](https://github.com/flxxxxddd/SimpleMtkWlan) fork by [flxxxxddd](https://github.com/flxxxxddd) and [SimpleMtkBtFw](https://github.com/flxxxxddd/SimpleMtkBtFw) fork by [flxxxxddd](https://github.com/flxxxxddd)
 - [arxusion](https://github.com/Arxusion/) for [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/)
+- [FranciumOS-org](https://github.com/FranciumOS-org) for [MHelper](https://github.com/FranciumOS-org/MHelper)
 - And others who contribute to the community
