@@ -74,6 +74,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [X] **Rog controls / Keyboards lightning**: Download [MHelper](https://github.com/FranciumOS-org/MHelper) by [FranciumOS-org](https://github.com/FranciumOS-org)
 - [X] **ARM apps**: Apps that only support the ARM architecture can now run on the x86_64 architecture, thanks to [Nullmoth’s](https://github.com/nullmoth) translation layer. (Experimental on v2.7, not tested on this machine)
 - [ ] **AirDrop / AWDL / Continuity**: Under development... [AirportMtk-AWDL](https://github.com/Arxusion/AirportMtk-AWDL) by [Arxusion](https://github.com/Arxusion/)
+- [ ] **Jack 3.5mm / HDMI : HDMI only work with iGPU and Jack 3.5mm not working.
 
 >[!WARNING]
 > - This version doesn't have a MUX switch. So if you want to use an Nvidia graphics card, you need an external monitor that connects via a Type-C port and is capable of outputting video to the computer, add this to boot-args `-wegnoigpu` to disable iGPU AMD. (Tested)
