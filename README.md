@@ -62,9 +62,8 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
 - [X] **MT7921 Wifi**: Download driver [simplemtkwlan](https://github.com/flxxxxddd/SimpleMtkWlan). Connects wifi via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
-- [X] **MT7921 Wifi native**: Worked natively with this [MtkWireless](https://github.com/Dino-VN/MtkWireless/) by [Dino-VN](https://github.com/Dino-VN/). Temporarily solve the problem of [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) not loading and slow speed.
-
-- [X] **MT7921 Bluetooth**: Connected and functioning normally.
+- [X] **MT7921 Wifi native**: Worked natively with this [MtkWireless](https://github.com/Dino-VN/MtkWireless/) by [Dino-VN](https://github.com/Dino-VN/). Temporarily solve the problem of [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) not loading and slow speed. (Only for Tahoe 26, Sequoia use old kexts)
+- [X] **MT7921 Bluetooth**: Connected and functioning normally. (Mtkwireless by Dino-VN only work on Tahoe 26, Sequoia use old kexts)
 - [X] **Rog controls / Keyboards lightning**: Download [MHelper](https://github.com/FranciumOS-org/MHelper) by [FranciumOS-org](https://github.com/FranciumOS-org)
 - [X] **ARM apps**: Apps that only support the ARM architecture can now run on the x86_64 architecture, thanks to [Nullmoth’s](https://github.com/nullmoth) translation layer. (Experimental on v2.7, not tested on this machine)
 - [ ] **AirDrop / AWDL / Continuity**: Not working...
