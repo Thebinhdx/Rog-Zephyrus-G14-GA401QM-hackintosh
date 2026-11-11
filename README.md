@@ -61,7 +61,7 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [X] **Sound**: Working perfectly on Sequoia. Need [SimpleHDA](https://github.com/laobamac/SimpleHDA) for Tahoe (It's already included in the kexts, no need to re-download).
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
-- [X] **MT7921 Wifi**: Connects wifi via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
+- [X] **MT7921 Wifi**: Download driver [simplemtkwlan](https://github.com/flxxxxddd/SimpleMtkWlan). Connects wifi via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
 - [X] **MT7921 Wifi native**: Worked natively with this [MtkWireless](https://github.com/Dino-VN/MtkWireless/) by [Dino-VN](https://github.com/Dino-VN/). Temporarily solve the problem of [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) not loading and slow speed.
 
 - [X] **MT7921 Bluetooth**: Connected and functioning normally.
