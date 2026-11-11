@@ -62,22 +62,17 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [ ] **Fn keys**: Most keys are not mapped.
 - [ ] **Sleep / Wake**: Unstable i think. (Not Tested)
 - [X] **MT7921 Wifi**: Connects wifi via the SimpleMTK app. [Download the pre-built SimpleMTK.](https://github.com/Thebinhdx/ga401qm-hackintosh/blob/main/SimpleMTK-v0.1-rz616.zip) It's taken from the original SimpleMTKClient code by [laobamc](https://github.com/laobamac). (Note: I tested on speedtest only get ~40 mbps down and <5 mbps up. The speed is quite slow.)
-- [X] **MT7921 Wifi native**: Worked natively with this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) by [arxusion](https://github.com/Arxusion/). (Support Sequoia and Tahoe, Tested, but it is still subject to a speed limit)
-
->[!NOTE]
->If you use this [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/). You need to set `Enabled` to `true` for airportmtkwlan and `Disabled` to `false` other simplewtkwlan kext. The EFI folder only contains kexts for Tahoe; if you are using the Sequoia version, please download the appropriate files from the creator's website.
-
->[!WARNING]
->**Do not update to the new [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) kext version; versions after 1.5.1 are unstable, frequently lose connection, or stop working on versions 1.6 and above. Stay on version 1.5.1 until an official patch is released!**
+- [X] **MT7921 Wifi native**: Worked natively with this [MtkWireless](https://github.com/Dino-VN/MtkWireless/) by [Dino-VN](https://github.com/Dino-VN/). Temporarily solve the problem of [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/) not loading and slow speed.
 
 - [X] **MT7921 Bluetooth**: Connected and functioning normally.
 - [X] **Rog controls / Keyboards lightning**: Download [MHelper](https://github.com/FranciumOS-org/MHelper) by [FranciumOS-org](https://github.com/FranciumOS-org)
 - [X] **ARM apps**: Apps that only support the ARM architecture can now run on the x86_64 architecture, thanks to [Nullmoth’s](https://github.com/nullmoth) translation layer. (Experimental on v2.7, not tested on this machine)
-- [ ] **AirDrop / AWDL / Continuity**: Under development... [AirportMtk-AWDL](https://github.com/Arxusion/AirportMtk-AWDL) by [Arxusion](https://github.com/Arxusion/)
+- [ ] **AirDrop / AWDL / Continuity**: Not working...
 - [ ] **Jack 3.5mm / HDMI**: HDMI only work with iGPU and Jack 3.5mm not working on audio driver by nullmoth (Not tested on simpleHDA)
+- [ ] **Hybrid GPU**: Unknown.
 
 >[!WARNING]
-> - This version doesn't have a MUX switch. So if you want to use an Nvidia graphics card, you need an external monitor that connects via a Type-C port and is capable of outputting video to the computer, add this to boot-args `-wegnoigpu` to disable iGPU AMD. (Tested)
+> - This version doesn't have a MUX switch. So if you want to use an Nvidia graphics card, you need an external monitor that connects via a Type-C port and is capable of outputting video to the computer. (Tested)
 > - If you're using an AMD integrated GPU instead of an Nvidia GPU, you'll need to use `-wegnoegpu` in boot-args to disable the Nvidia GPU. However, when using an AMD integrated GPU, you'll also need to disable hardware acceleration on Chromium that isn't optimized for the Nootedred kext. (If you don't disable it, apps running Chromium will lag and become unusable.) (Tested)
 > - (Use dGPU) To upgrade from Sequoia to Tahoe, you need follow the instruction which nullmoth wrote in the instructions to upgrade without broken driver.
 > - Nvidia graphics drivers have become increasingly stable in recent releases, yet they still fail to resolve issues related to DRM-protected content (on platforms like Netflix, Discord, etc.).
@@ -92,4 +87,5 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [laobamac](https://github.com/laobamac) for [SimpleHDA](https://github.com/laobamac/SimpleHDA), [SimpleMtkWlan](https://github.com/flxxxxddd/SimpleMtkWlan) fork by [flxxxxddd](https://github.com/flxxxxddd) and [SimpleMtkBtFw](https://github.com/flxxxxddd/SimpleMtkBtFw) fork by [flxxxxddd](https://github.com/flxxxxddd)
 - [arxusion](https://github.com/Arxusion/) for [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/)
 - [FranciumOS-org](https://github.com/FranciumOS-org) for [MHelper](https://github.com/FranciumOS-org/MHelper)
+- [Dino-VN](https://github.com/Dino-VN/) for [MtkWireless](https://github.com/Dino-VN/MtkWireless/)
 - And others who contribute to the community
