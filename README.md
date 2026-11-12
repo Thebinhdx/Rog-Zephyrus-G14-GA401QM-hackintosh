@@ -87,5 +87,5 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 - [laobamac](https://github.com/laobamac) for [SimpleHDA](https://github.com/laobamac/SimpleHDA), [SimpleMtkWlan](https://github.com/flxxxxddd/SimpleMtkWlan) fork by [flxxxxddd](https://github.com/flxxxxddd) and [SimpleMtkBtFw](https://github.com/flxxxxddd/SimpleMtkBtFw) fork by [flxxxxddd](https://github.com/flxxxxddd)
 - [arxusion](https://github.com/Arxusion/) for [airportmtkwlan.kext](https://github.com/Arxusion/AirportMtkWlan/)
 - [FranciumOS-org](https://github.com/FranciumOS-org) for [MHelper](https://github.com/FranciumOS-org/MHelper)
-- [Dino-VN](https://github.com/Dino-VN/) for [MtkWireless](https://github.com/Dino-VN/MtkWireless/)
+- [Dino-VN](https://github.com/Dino-VN/) for [MtkWirelessWifi and MtkWirelessBT](https://github.com/Dino-VN/MtkWireless/)
 - And others who contribute to the community
