@@ -43,6 +43,8 @@ macOS on ROG Zephyrus G14 (2021) GA401QM - Ryzen 9 5900HS + RTX 3060 Laptop.
 
 **Worked on macOS 15.2+/26 (Tested)**
 
+We will attempt to install macOS 27 Golden Gate in the future if the installation methods for macOS 27 are stable enough and the kexts are updated.
+
 >[!NOTE]
 >On Tahoe 26, Apple removed AppleHDA so you can't use your internal speaker. You need install this [SimpleHDA](https://github.com/laobamac/SimpleHDA) to fix this issue (It's already included in the kexts, no need to re-download).
 >
